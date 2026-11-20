@@ -1,0 +1,63 @@
+﻿# Data & Audio (but KEEP outputs folder for results)
+data/
+*.wav
+*.arrow
+*.mp3
+*.flac
+
+# Virtual environments
+.venv/
+.venv1/
+venv/
+env/
+ENV/
+.Python
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+.eggs/
+dist/
+build/
+.mypy_cache/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Large model files - KEEP ONLY METADATA, NOT WEIGHTS
+models/whisper-quick-trained/*
+!models/whisper-quick-trained/README.md
+!models/whisper-quick-trained/config.json
+!models/whisper-quick-trained/preprocessor_config.json
+
+# Large CSV - but KEEP other outputs
+outputs/spelling_classification.csv
+outputs/*.wav
+outputs/*.mp3
+
+# Environment variables
+.env
+.env.local
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Build artifacts
+*.tar.gz
+*.zip
